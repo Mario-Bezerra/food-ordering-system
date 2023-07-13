@@ -10,7 +10,7 @@ public class StreetAddress {
     private final String city;
     private final Integer number;
 
-    public StreetAddress(UUID id, String street, String postalCode, String city, Integer number) {
+    public StreetAddress(UUID id, String street, String postalCode, String city, @javax.validation.constraints.NotNull @javax.validation.constraints.Max(value = 6) String number) {
         this.id = id;
         this.street = street;
         this.postalCode = postalCode;

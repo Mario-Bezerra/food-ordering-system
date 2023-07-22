@@ -1,5 +1,7 @@
 package com.food.ordering.system.order.service.domain.valueObjects;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -10,12 +12,16 @@ public class StreetAddress {
     private final String city;
     private final Integer number;
 
-    public StreetAddress(UUID id, String street, String postalCode, String city, @javax.validation.constraints.NotNull @javax.validation.constraints.Max(value = 6) String number) {
+    public StreetAddress(UUID id,
+                         String street,
+                         String postalCode,
+                         String city,
+                         @NotNull @Max(value = 6) String number) {
         this.id = id;
         this.street = street;
         this.postalCode = postalCode;
         this.city = city;
-        this.number = number;
+        this.number = Integer.valueOf(number);
     }
 
     public UUID getId() {

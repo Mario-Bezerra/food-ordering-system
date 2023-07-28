@@ -10,11 +10,12 @@
     </parent>
 
     <groupId>com.food.ordering.system</groupId>
-    <artifactId>commom</artifactId>
+    <artifactId>common</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>commom-domain</module>
+        <module>common-domain</module>
+        <module>common-application</module>
     </modules>
 
 </project>

@@ -36,7 +36,6 @@ public class KafkaProducerImpl<K extends Serializable, V extends SpecificRecordB
             throw new KafkaProducerException("Error on kafka producer with key: " + key + " and message: " + message);
         }
     }
-
     @PreDestroy
     public void close() {
         if (kafkaTemplate != null) {

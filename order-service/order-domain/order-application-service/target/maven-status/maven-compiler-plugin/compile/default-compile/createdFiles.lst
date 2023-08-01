@@ -18,6 +18,7 @@ com\food\ordering\system\order\service\domain\ports\input\message\listener\payme
 com\food\ordering\system\order\service\domain\OrderApplicationServiceImpl.class
 com\food\ordering\system\order\service\domain\PaymentResponseMessageListenerImpl.class
 com\food\ordering\system\order\service\domain\dto\message\RestaurantApprovalResponse.class
+com\food\ordering\system\order\service\domain\config\OrderServiceConfigData.class
 com\food\ordering\system\order\service\domain\dto\create\CreateOrderCommand.class
 com\food\ordering\system\order\service\domain\OrderCreatedCommandHandler.class
 com\food\ordering\system\order\service\domain\ports\output\repository\RestaurantRepository.class

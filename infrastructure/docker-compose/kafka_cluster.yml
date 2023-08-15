@@ -1,6 +1,7 @@
 version: '3.7'
 services:
   schema-registry:
+    user: "0:0"
     image: confluentinc/cp-schema-registry:${KAFKA_VERSION}
     hostname: schema-registry
     depends_on:
@@ -18,6 +19,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-broker-1:
+    user: "0:0"
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
     hostname: kafka-broker-1
     ports:
@@ -35,6 +37,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-broker-2:
+    user: "0:0"
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
     hostname: kafka-broker-2
     ports:
@@ -52,6 +55,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-broker-3:
+    user: "0:0"
     image: confluentinc/cp-kafka:${KAFKA_VERSION}
     hostname: kafka-broker-3
     ports:
@@ -69,6 +73,7 @@ services:
     networks:
       - ${GLOBAL_NETWORK:-kafka}
   kafka-manager:
+    user: "0:0"
     image: hlebalbau/kafka-manager:stable
     restart: always
     ports:

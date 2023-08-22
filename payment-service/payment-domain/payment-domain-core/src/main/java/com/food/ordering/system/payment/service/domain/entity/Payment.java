@@ -44,6 +44,14 @@ public class Payment extends AggregateRoot<PaymentId> {
         return new Builder();
     }
 
+    public void updateStatus(PaymentStatus paymentStatus){
+        this.setPaymentStatus(paymentStatus);
+    }
+
+    public void setPaymentStatus(PaymentStatus paymentStatus) {
+        this.paymentStatus = paymentStatus;
+    }
+
     public OrderId getOrderId() {
         return orderId;
     }
@@ -75,7 +83,7 @@ public class Payment extends AggregateRoot<PaymentId> {
         private Builder() {
         }
 
-        public Builder id(PaymentId val) {
+        public Builder paymentId(PaymentId val) {
             paymentId = val;
             return this;
         }

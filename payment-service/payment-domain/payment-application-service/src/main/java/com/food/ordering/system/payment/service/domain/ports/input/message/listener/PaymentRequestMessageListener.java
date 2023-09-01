@@ -7,5 +7,5 @@ import com.food.ordering.system.payment.service.domain.event.PaymentFailedEvent;
 public interface PaymentRequestMessageListener {
 
     void completePayment(PaymentRequest paymentRequest);
-    void cancelPayment(PaymentRequest paymentRequest, DomainEventPublisher<PaymentFailedEvent> paymentFailedEventDomainEventPublisher);
+    void cancelPayment(PaymentRequest paymentRequest);
 }

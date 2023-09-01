@@ -77,7 +77,7 @@ public class PaymentRequestHelper {
         return paymentEvent;
     }
     @Transactional
-    public PaymentEvent persistCancelPayment(PaymentRequest paymentRequest, DomainEventPublisher<PaymentFailedEvent> paymentFailedEventDomainEventPublisher){
+    public PaymentEvent persistCancelPayment(PaymentRequest paymentRequest){
         log.info("Received payment rollback event for order id: {}", paymentRequest.getOrderId());
         Optional<Payment> paymentResponse = paymentRepository
                 .findByOrderId(UUID.fromString(paymentRequest.getOrderId()));

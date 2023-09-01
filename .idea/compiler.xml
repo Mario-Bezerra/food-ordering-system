@@ -30,6 +30,8 @@
     <bytecodeTargetLevel>
       <module name="commom" target="17" />
       <module name="commom-domain" target="17" />
+      <module name="payment-dataaccess (1) (com.food.ordering.system)" target="1.8" />
+      <module name="payment-dataaccess (2)" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -58,6 +60,7 @@
       <module name="payment-application-service" options="-parameters" />
       <module name="payment-container" options="-parameters" />
       <module name="payment-dataaccess" options="-parameters" />
+      <module name="payment-dataaccess (2)" options="-parameters" />
       <module name="payment-domain" options="-parameters" />
       <module name="payment-domain-core" options="-parameters" />
       <module name="payment-messaging" options="-parameters" />

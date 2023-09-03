@@ -3,6 +3,9 @@ C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\ord
 C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\exception\OrderNotFoundException.java
 C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\event\OrderCreatedEvent.java
 C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\exception\OrderDomainException.java
+C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\valueobject\OrderItemId.java
+C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\valueobject\StreetAddress.java
+C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\valueobject\TrackingId.java
 C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\entity\OrderItem.java
 C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\entity\Restaurant.java
 C:\Users\gabri\OneDrive\Área de Trabalho\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\valueObjects\StreetAddress.java

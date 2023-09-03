@@ -6,7 +6,7 @@ import com.food.ordering.system.payment.service.domain.entity.Payment;
 import java.time.ZonedDateTime;
 import java.util.Collections;
 
-public class PaymentCompletedEvent extends PaymentEvent{
+public class PaymentCompletedEvent extends PaymentEvent {
 
     private final DomainEventPublisher<PaymentCompletedEvent> paymentCompletedEventDomainEventPublisher;
 

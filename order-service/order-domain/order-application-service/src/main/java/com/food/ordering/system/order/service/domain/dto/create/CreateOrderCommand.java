@@ -9,11 +9,10 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
+@Getter
 @Builder
 @AllArgsConstructor
-@Getter
 public class CreateOrderCommand {
-
     @NotNull
     private final UUID customerId;
     @NotNull

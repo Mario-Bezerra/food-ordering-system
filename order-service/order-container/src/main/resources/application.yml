@@ -47,12 +47,11 @@ kafka-producer-config:
   retry-count: 5
 
 kafka-consumer-config:
-  key-serializer-class: org.apache.kafka.common.serialization.StringSerializer
-  value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
+  key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
   payment-consumer-group-id: payment-topic-consumer
   restaurant-approval-consumer-group-id: restaurant-approval-topic-consumer
-  consumer-group-id: customer-topic-consumer
-  auto-offset-reset: earlist
+  auto-offset-reset: earliest
   specific-avro-reader-key: specific.avro.reader
   specific-avro-reader: true
   batch-listener: true
@@ -62,6 +61,6 @@ kafka-consumer-config:
   heartbeat-interval-ms: 3000
   max-poll-interval-ms: 300000
   max-poll-records: 500
-  max-partition-fetch-bytes-defacult: 1048576
+  max-partition-fetch-bytes-default: 1048576
   max-partition-fetch-bytes-boost-factor: 1
   poll-timeout-ms: 150

@@ -1,6 +1,6 @@
 package com.food.ordering.system.order.service.dataaccess.order.entity;
 
-import com.food.ordering.system.domain.valueObject.OrderStatus;
+import com.food.ordering.system.domain.valueobject.OrderStatus;
 import lombok.*;
 
 import javax.persistence.*;
@@ -14,10 +14,9 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Table(name = "orders")
+@Entity
 public class OrderEntity {
-
     @Id
     private UUID id;
     private UUID customerId;
@@ -39,7 +38,7 @@ public class OrderEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         OrderEntity that = (OrderEntity) o;
-        return Objects.equals(id, that.id);
+        return id.equals(that.id);
     }
 
     @Override

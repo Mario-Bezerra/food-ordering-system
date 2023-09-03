@@ -1,7 +1,6 @@
 package com.food.ordering.system.payment.service.domain.dto;
 
-import com.food.ordering.system.domain.valueObject.PaymentStatus;
-import com.food.ordering.system.payment.service.domain.valueObjects.PaymentOrderStatus;
+import com.food.ordering.system.domain.valueobject.PaymentOrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -13,7 +12,6 @@ import java.time.Instant;
 @Builder
 @AllArgsConstructor
 public class PaymentRequest {
-
     private String id;
     private String sagaId;
     private String orderId;

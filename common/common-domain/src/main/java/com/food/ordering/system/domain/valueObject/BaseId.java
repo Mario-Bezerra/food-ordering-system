@@ -1,4 +1,4 @@
-package com.food.ordering.system.domain.valueObject;
+package com.food.ordering.system.domain.valueobject;
 
 import java.util.Objects;
 
@@ -18,7 +18,7 @@ public abstract class BaseId<T> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         BaseId<?> baseId = (BaseId<?>) o;
-        return Objects.equals(value, baseId.value);
+        return value.equals(baseId.value);
     }
 
     @Override

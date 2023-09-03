@@ -1,10 +1,10 @@
 package com.food.ordering.system.payment.service.domain.entity;
 
 import com.food.ordering.system.domain.entity.BaseEntity;
-import com.food.ordering.system.domain.valueObject.CustomerId;
-import com.food.ordering.system.domain.valueObject.Money;
-import com.food.ordering.system.payment.service.domain.valueObjects.CreditHistoryId;
-import com.food.ordering.system.payment.service.domain.valueObjects.TransactionType;
+import com.food.ordering.system.domain.valueobject.CustomerId;
+import com.food.ordering.system.domain.valueobject.Money;
+import com.food.ordering.system.payment.service.domain.valueobject.CreditHistoryId;
+import com.food.ordering.system.payment.service.domain.valueobject.TransactionType;
 
 public class CreditHistory extends BaseEntity<CreditHistoryId> {
 
@@ -19,10 +19,10 @@ public class CreditHistory extends BaseEntity<CreditHistoryId> {
         transactionType = builder.transactionType;
     }
 
-
     public static Builder builder() {
         return new Builder();
     }
+
 
     public CustomerId getCustomerId() {
         return customerId;
@@ -44,7 +44,6 @@ public class CreditHistory extends BaseEntity<CreditHistoryId> {
 
         private Builder() {
         }
-
 
         public Builder creditHistoryId(CreditHistoryId val) {
             creditHistoryId = val;

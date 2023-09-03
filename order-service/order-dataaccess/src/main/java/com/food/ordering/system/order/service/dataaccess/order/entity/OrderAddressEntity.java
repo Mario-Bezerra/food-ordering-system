@@ -11,10 +11,9 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Table(name = "order_address")
+@Entity
 public class OrderAddressEntity {
-
     @Id
     private UUID id;
 
@@ -25,18 +24,17 @@ public class OrderAddressEntity {
     private String street;
     private String postalCode;
     private String city;
-    private Integer number;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         OrderAddressEntity that = (OrderAddressEntity) o;
-        return Objects.equals(id, that.id) && Objects.equals(order, that.order) && Objects.equals(street, that.street) && Objects.equals(postalCode, that.postalCode) && Objects.equals(city, that.city) && Objects.equals(number, that.number);
+        return id.equals(that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, order, street, postalCode, city, number);
+        return Objects.hash(id);
     }
 }

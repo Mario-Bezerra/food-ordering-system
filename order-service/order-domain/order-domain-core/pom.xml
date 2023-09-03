@@ -11,20 +11,13 @@
 
     <artifactId>order-domain-core</artifactId>
 
+    <properties>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.food.ordering.system</groupId>
             <artifactId>common-domain</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
         </dependency>
     </dependencies>
 

@@ -18,6 +18,7 @@
 .metadata
 bin/
 tmp/
+*.log
 *.class
 *.tmp
 *.bak
